@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+.private-navbar{
+    color: rgb(25, 135, 84) !important;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.private-navbar-left{
+    color: rgb(25, 135, 84) !important;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.private-navbar-button-acc{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.offcanvas-collapse {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1045;
+    width: 250px;
+    padding: 1rem;
+    padding-top: 60px;
+    transform: translateX(0); /* Böyük ekranlarda sidebar açıqdır */
+    transition: transform 0.3s ease-in-out;
+    
+    color: rgb(25, 135, 84) !important;
+}
+
+.navbar-toggler {
+    display: none;
+    z-index: 1050; /* Sidebar-dan yüksək z-index */
+    position: relative;
+}
+
+@media (max-width: 992px) { /* 992px-dən kiçik ekranlar üçün */
+    body {
+        padding-left: 0; /* Sidebar gizləndiyi üçün padding-i aradan qaldırır */
+    }
+
+    .navbar-toggler {
+        display: block;
+        margin-left: 1rem; /* Buttonun menudan ayrı dayanmasını təmin edir */
+    }
+
+    .offcanvas-collapse {
+        transform: translateX(-100%);
+    }
+
+    .offcanvas-collapse.open {
+        transform: translateX(0);
+    }
+}
+
+
+/* All Things CSS */
+
+.succes-color{
+    color: rgb(25, 135, 84) !important;
+}
+
+.succes-color-active{
+    color: rgb(19, 110, 68) !important;
+}
+
+
+
+/* To DO LIST CSS */
+body{
+    
+    font-family: "Roboto Slab", serif;
+}
+.main-class {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    /* width: 300px; */
+    text-align: center;
+}
+
+.main-h1 {
+    margin-bottom: 20px;
+}
+
+.main-input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.main-input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.main-button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.main-button:hover {
+    background-color: #218838;
+}
+
+.main-tasklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-li button {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-li button:hover {
+    background-color: #c82333;
+}
+
+
+
+.dropdown-menu{
+    width: 189px !important;
+    
+}

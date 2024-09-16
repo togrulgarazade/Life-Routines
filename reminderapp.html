@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDoList - Home</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Xatırladıcı Proqramı</title>
     
-    <link rel="stylesheet" href="css/allthings.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/reminder.css">
 </head>
 <body>
     
+
     <header>
         <nav class="private-navbar container navbar navbar-light bg-white">
             <button class="navbar-toggler" type="button" id="navbarSideCollapse">
@@ -18,7 +19,7 @@
             </button>
             <a href="./home.html" class="navbar-brand private-navbar">Life Routines</a>
             <!-- <a href="./acc-home.html" class="private-navbar-button-acc btn btn-outline-success my-2 my-sm-0"><i class="fa-solid fa-universal-access"></i> Togrul Garazade </a> -->
-            
+
             <div class="dropdown">
                 <a href="#" class="btn btn-outline-success my-2 my-sm-0 dropdown-toggle private-navbar-button-acc" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fa-solid fa-universal-access"></i> Togrul Garazade
@@ -28,7 +29,9 @@
                   <a class="dropdown-item btn btn-outline-success my-2 my-sm-0  private-navbar-button-acc" href="./logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>     Çıxış</a>
                 </div>
               </div>
-        
+
+
+
         </nav>
     
         <div class="private-navbar-left offcanvas-collapse" id="sidebar">
@@ -49,9 +52,24 @@
         </div>
     </header>
 
-    <main>  </main>
+    <main class="main-class">
 
-    <footer>  </footer>
+        <div class="main-container">
+            <h1 class="main-h1">Xatırladılacaqlar Siyahısı</h1>
+            <div class="main-input-container">
+                <input class="main-input" type="text" id="new-task" placeholder="Xatırladılacaqlar siyahısına əlavə et...">
+                <input type="datetime-local" id="task-datetime" class="main-input">
+                <button class="main-button" onclick="addTask()">Əlavə et</button>
+            </div>
+            <ul class="main-tasklist" id="task-list"></ul>
+        </div>
+
+
+
+    </main>
+
+    <footer></footer>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -62,5 +80,6 @@
     
     <script src="https://kit.fontawesome.com/eb23b2d8dd.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="js/reminderapp.js"></script>
 </body>
 </html>
